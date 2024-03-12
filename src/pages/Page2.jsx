@@ -4,13 +4,13 @@ import fileDownload from 'js-file-download'; // This library helps in downloadin
 
 class PDFDownloader extends React.Component {
   downloadPDF = () => {
-        const pdfUrl = "../../public/vResume.pdf"
+        const pdfUrl = "../../public/vkResume.pdf"
     // Use fetch API to fetch the PDF file
     fetch(pdfUrl)
       .then(response => response.blob()) //convert response to Blob
       .then(blob => {
         // Use js-file-download library to initiate the download
-        fileDownload(blob, 'vResume.pdf');
+        fileDownload(blob, 'vkResume.pdf');
       })
       .catch(error => {
         console.error('Error downloading PDF: ', error)
