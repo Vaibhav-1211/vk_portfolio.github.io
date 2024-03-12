@@ -1,46 +1,25 @@
 import React from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
-import { saveAs } from 'file-saver';
+import fileDownload from 'js-file-download'; // This library helps in downloading files
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 class PDFDownloader extends React.Component {
-  state = {
-    numPages: null,
-    pageNumber: 1,
-  };
-
-  onDocumentLoadSuccess = ({ numPages }) => {
-    this.setState({ numPages });
-  };
-
-  nextPage = () => {
-    this.setState((prevState) => ({
-      pageNumber: Math.min(prevState.pageNumber + 1, prevState.numPages),
-    }));
-  };
-
-  prevPage = () => {
-    this.setState((prevState) => ({
-      pageNumber: Math.max(prevState.pageNumber - 1, 1),
-    }));
-  };
-
-  downloadPDF = async () => {
-    try {
-      const pdfBlob = await fetch('../../public/Vresume12.pdf').then((res) => res.blob());
-      saveAs(pdfBlob, 'Vresume12.pdf');
-    } catch (error) {
-      console.error('Error downloading PDF:', error);
-    }
+  downloadPDF = () => {
+    // Replace 'your_pdf_file.pdf' with the URL or file path of the PDF you want to download
+    const pdfUrl = "../../public/Vresume12.pdf"
+    // Use fetch API to fetch the PDF file
+    fetch(pdfUrl)
+      .then(response => response.blob()) //convert response to Blob
+      .then(blob => {
+        // Use js-file-download library to initiate the download
+        fileDownload(blob, 'Vresume12.pdf');
+      })
+      .catch(error => {
+        console.error('Error downloading PDF: ', error)
+      })
   };
   render() {
-    // render() {
-    const { pageNumber, numPages } = this.state;
     return (
       <div className="card text mx-auto mb-4" style={{ maxWidth: "800px" }}>
-
-        {/* <Document file="../../public/VResume.pdf" onLoadSuccess={this.onDocumentLoadSuccess}><Page pageNumber={pageNumber} />
-        </Document> */}
         <div className="row g-2 justify-content-center text-start p-4">
           <div className="col-md-8">
             <div className="card-body  ">
@@ -60,7 +39,7 @@ class PDFDownloader extends React.Component {
                 <div className="col p-2 g-1 fw-medium text-muted">Ahmedabad,India</div>
               </div>
               <div className='row-1'>
-                
+
                 <button className='btn btn-primary col rounded-pill my-3' type='button' onClick={this.downloadPDF}>Download Resume</button>
               </div>
             </div>
