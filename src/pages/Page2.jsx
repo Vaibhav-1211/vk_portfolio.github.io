@@ -25,10 +25,7 @@ class PDFDownloader extends React.Component {
             <div className="card-body  ">
               <h5 className="card-title fw-bold text-start">Hello,</h5>
               <h6 className='card-subtitle mb-2 text-muted'>I'm Frontend Developer</h6>
-              <p className="card-text">Aspiring IT professional with hands-on knowledge of HTML,
-                CSS, JavaScript, React JS, seeking a challenging role in an IT
-                company to contribute my skills and creativity to develop
-                innovative solutions.</p>
+              <p className="card-text">Driven by a passion for frontend development and a desire to create engaging and user-centric web experiences, I am seeking opportunities to further develop my skills and contribute to impactful projects within a dynamic and collaborative environment. Eager to leverage my knowledge and enthusiasm to contribute positively to the success of your organization while continuing to grow both personally and professionally.</p>
               <hr />
               <div className='row '>
                 <div className="col p-2 fw-medium fs-3 ">Vaibhav Kabira</div>
