@@ -4,7 +4,7 @@ import fileDownload from 'js-file-download'; // This library helps in downloadin
 
 class PDFDownloader extends React.Component {
   downloadPDF = () => {
-        const pdfUrl = "../../public/vkResume.pdf"
+    const pdfUrl = "../../public/vkResume.pdf"
     // Use fetch API to fetch the PDF file
     fetch(pdfUrl)
       .then(response => response.blob()) //convert response to Blob
@@ -36,7 +36,7 @@ class PDFDownloader extends React.Component {
               </div>
               <div className='row-1'>
 
-                <button className='btn btn-primary col rounded-pill my-3' type='button' onClick={this.downloadPDF}>Download Resume</button>
+                <button className='btn btn-primary col rounded-pill my-3' type='button' ><a className="text-light text-decoration-none" href='https://drive.google.com/file/d/1f20pxDqRAlE3qJ_Q6sqdwI9U2pacDN6c/view?usp=drive_link'>Download Resume</a></button>
               </div>
             </div>
           </div>
