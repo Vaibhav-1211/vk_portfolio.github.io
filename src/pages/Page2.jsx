@@ -18,7 +18,7 @@ const Profile = () => {
             </div>
             <div className='row-1'>
 
-              <button className='btn btn-primary col rounded-pill my-3' type='button' ><a className="text-light text-decoration-none" href='https://drive.google.com/file/d/1f20pxDqRAlE3qJ_Q6sqdwI9U2pacDN6c/view?usp=drive_link'>Download Resume</a></button>
+              <button className='btn btn-primary col rounded-pill my-3' type='button' ><a className="text-light text-decoration-none" href='https://drive.google.com/file/d/1nTXFa-hxn2qZSa-0U2eZ8VRY_8J6N9Ly/view?usp=drive_link'>Download Resume</a></button>
             </div>
           </div>
         </div>
