@@ -22,6 +22,7 @@ const Project = () => {
           <li className="list-group-item">Old Facebook Log in page - HTML + CSS | JavaScript <a className="mx-auto px-2" href="https://vaibhav-1211.github.io/loginPageOldfb/ "
           >Project Link</a></li>
           <li className="list-group-item">JS-Clock - HTML | CSS | JavaScript <a className="mx-auto px-2" href="https://vaibhav-1211.github.io/js-clock/ ">Project Link</a></li>
+          <li className="list-group-item">React Essentials - ReactJS <a className="mx-auto px-2" href="https://react-essentials-ten.vercel.app/ ">Project Link</a></li>
         </ul>
       </div>
     </div>
