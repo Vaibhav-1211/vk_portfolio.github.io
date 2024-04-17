@@ -23,6 +23,7 @@ const Project = () => {
           >Project Link</a></li>
           <li className="list-group-item">JS-Clock - HTML | CSS | JavaScript <a className="mx-auto px-2" href="https://vaibhav-1211.github.io/js-clock/ ">Project Link</a></li>
           <li className="list-group-item">React Essentials - ReactJS <a className="mx-auto px-2" href="https://react-essentials-ten.vercel.app/ ">Project Link</a></li>
+          <li className="list-group-item">Tic-Tac-Toe - ReactJS <a className="mx-auto px-2" href="https://tic-tac-toe-xi-blush.vercel.app/ ">Project Link</a></li>
         </ul>
       </div>
     </div>
