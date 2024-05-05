@@ -11,7 +11,7 @@ const Cards = () => {
       <div className='row g-4'>
         <div className='col-sm-3'>
           <div className="card">
-            <img src={htmlcss} className="rounded float-start" alt="HTMLCSS"  />
+            <img src={htmlcss} className="rounded float-middle " alt="HTMLCSS"  />
           </div>
         </div>
         <div className='col-sm-3'>
@@ -36,4 +36,3 @@ const Cards = () => {
 }
 
 export default Cards
-

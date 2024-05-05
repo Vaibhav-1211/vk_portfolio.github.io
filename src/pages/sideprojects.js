@@ -31,5 +31,11 @@ export const Side_Project_Data = [
     title: 'Investment Calculator',
     link: 'https://investment-calculator-app-alpha.vercel.app/',
   },
+  {
+    title: 'Styled Demo(used Vanilla CSS, Styled Components,Tailwind CSS)',
+    link: 'https://styeld-projects-react.vercel.app/',
+  },
+
+
 
 ]

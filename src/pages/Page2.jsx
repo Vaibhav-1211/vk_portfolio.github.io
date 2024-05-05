@@ -17,7 +17,6 @@ const Profile = () => {
               <div className="col p-2 g-1 fw-medium text-muted">Ahmedabad,India</div>
             </div>
             <div className='row-1'>
-
               <button className='btn btn-primary col rounded-pill my-3' type='button' ><a className="text-light text-decoration-none" href='https://drive.google.com/file/d/1psqV8IYA4pz3czzFklZI8JP220CbK77S/view?usp=sharing'>View Resume</a></button>
             </div>
           </div>
