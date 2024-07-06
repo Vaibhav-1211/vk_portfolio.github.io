@@ -11,7 +11,7 @@ import img10 from "../assets/certificate/img-10.jpg"
 
 const Gallery = () => {
   return (
-    <div className="container-sm">
+    <div className="container-">
       <div className="row g-4 ">
         <div className="col-sm-3 col-md-3">
           <div className="card border">

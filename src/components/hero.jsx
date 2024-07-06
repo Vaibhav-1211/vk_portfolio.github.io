@@ -9,7 +9,7 @@ const HeroSection = () => {
       <TypeAnimation
         className='display-6'
         sequence={[
-          'I am <Web Developer />',
+          'I am <Software Developer />',
           1000,
           () => {
             console.log('Sequence completed');
